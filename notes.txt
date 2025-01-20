@@ -1,0 +1,22 @@
+# intialized a Git repository first
+# npm init -y
+# npm install express jsonwebtoken mongoose cookie-parser dotenv axios bcryptjs
+# create server.js file in /backend
+# "type": "module" <- added in keyword of package.json
+By default it is commonjs -> const express = require('express')
+But to use the import statement we used module type
+i.e import express from 'express'
+# modified main & scripts in package.json -> run in terminal -> npm run dev
+# For instant changes - 
+add this -> node --watch backend/server.js in the package.json->scripts->dev
+and now run -> npm run dev
+or 
+install nodemon i.e npm install nodemon -D
+update package.json->scripts->dev -> nodemon backend/server.js
+Now run -> npm run dev
+# backend/routes/auth.route.js
+# /backend/controllers/auth.controller.js
+# if type:"module" always import local files with .js extension
+# .env file -> mongodb connection string -> updated database name - netflix_db
+# /backend/config/envVars.js
+# /backend/models/user.model.js
