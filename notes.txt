@@ -20,3 +20,7 @@ Now run -> npm run dev
 # .env file -> mongodb connection string -> updated database name - netflix_db
 # /backend/config/envVars.js
 # /backend/models/user.model.js
+
+# Implemented signup, login, logout API route
+# Hashed password using bcrypt, generate JWT Token & cookie
+# Added ENV_VARS for JWT and NODE_ENV
