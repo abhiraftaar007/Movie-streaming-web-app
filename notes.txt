@@ -24,3 +24,9 @@ Now run -> npm run dev
 # Implemented signup, login, logout API route
 # Hashed password using bcrypt, generate JWT Token & cookie
 # Added ENV_VARS for JWT and NODE_ENV
+
+# Added TMDB_API in ENV_VARS & .env
+# Made a movie route in server.js
+# Made /routes/movie.route.js -> Trailer, Details, Trending
+# /controller/movie.controller.js -> Implementation of movie routes
+# /services/tmdb.services.js for authorization and fetching data from TMDB
