@@ -30,3 +30,7 @@ Now run -> npm run dev
 # Made /routes/movie.route.js -> Trailer, Details, Trending
 # /controller/movie.controller.js -> Implementation of movie routes
 # /services/tmdb.services.js for authorization and fetching data from TMDB
+
+# Make movie route for similar and category
+# Added function for similar and category in movie controller
+# In category API, you can pass -> popular, top_rated or upcoming
