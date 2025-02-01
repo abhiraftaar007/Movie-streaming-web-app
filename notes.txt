@@ -34,3 +34,7 @@ Now run -> npm run dev
 # Make movie route for similar and category
 # Added function for similar and category in movie controller
 # In category API, you can pass -> popular, top_rated or upcoming
+# Made API for tv route in server.js
+# tv.route & tv.controller.js are same as movie.route & movie.controller.js
+# The key difference in the fetch API, where we replaced movie -> tv
+# tv by category is on_the_air API path
