@@ -38,3 +38,9 @@ Now run -> npm run dev
 # tv.route & tv.controller.js are same as movie.route & movie.controller.js
 # The key difference in the fetch API, where we replaced movie -> tv
 # tv by category is on_the_air API path
+
+# Added Search functionality by Person, Movie or Tv Shows
+# /routes/search.route.js & /controllers/search.controller.js
+# Used search API keys of themoviedb of Person, Movie or Tv Shows
+# Added delete history item functionality
+
