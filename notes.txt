@@ -53,5 +53,8 @@ npm i axios lucide-react react-player react-hot-toast react-router-dom zustand
 # npx tailwindcss init -p
 # followed by the tailwind css steps i.e tailwindConfig, index css code
 # Kill the terminal and paste example tailwind css h1 code and then run, npm run dev
-
+# Updated es-lint for ' errors, html for favicon of Netflix
+# Added all needed files in public folder
+# Made routes for login, signup and HomePage
+# Completed Signup and Login frontend Pages and navigation between them
 
