@@ -44,3 +44,14 @@ Now run -> npm run dev
 # Used search API keys of themoviedb of Person, Movie or Tv Shows
 # Added delete history item functionality
 
+# Frontend Part
+# cd frontend , npm create vite@latest ., npm i, npm i axios, 
+npm i axios lucide-react react-player react-hot-toast react-router-dom zustand
+# npm run dev
+# install ESLint extention
+# npm install -D tailwindcss@3 postcss autoprefixer
+# npx tailwindcss init -p
+# followed by the tailwind css steps i.e tailwindConfig, index css code
+# Kill the terminal and paste example tailwind css h1 code and then run, npm run dev
+
+
