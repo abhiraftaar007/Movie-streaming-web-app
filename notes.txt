@@ -58,3 +58,6 @@ npm i axios lucide-react react-player react-hot-toast react-router-dom zustand
 # Made routes for login, signup and HomePage
 # Completed Signup and Login frontend Pages and navigation between them
 
+# Completed UI AuthScreen and Footer
+# Conditionally render the AuthScreen and Homescreen in HomePage
+
