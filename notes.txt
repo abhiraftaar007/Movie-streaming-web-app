@@ -61,3 +61,7 @@ npm i axios lucide-react react-player react-hot-toast react-router-dom zustand
 # Completed UI AuthScreen and Footer
 # Conditionally render the AuthScreen and Homescreen in HomePage
 
+# authCheck in route and auth controller
+# /store/authUser.js implementing login,logout,signup
+# vite.config.js added target URL i.e "https://localhost:5000 for all axios request
+
