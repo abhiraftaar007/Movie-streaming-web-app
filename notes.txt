@@ -65,3 +65,8 @@ npm i axios lucide-react react-player react-hot-toast react-router-dom zustand
 # /store/authUser.js implementing login,logout,signup
 # vite.config.js added target URL i.e "https://localhost:5000 for all axios request
 
+# Added keyframes if trending content is not available in /index.css
+# Made mobileMenu responsive in /Navbar.jsx
+# /useGetTrendingContent.js hook to fetch the trending movie and tv Shows
+# /authUser.js -> checking whether the user is logged in or not
+# /constant.js for storing path of TMDB API of the trending content images, posters on Homescreen
