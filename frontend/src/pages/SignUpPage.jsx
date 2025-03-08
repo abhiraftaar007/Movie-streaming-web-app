@@ -10,17 +10,16 @@ const SignUpPage = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const { signup } = useAuthStore();
+  const { signup, isSigningUp } = useAuthStore();
 
   const handleSignUp = (e) => {
     e.preventDefault();
-    // console.log(email, username, password);
     signup({ email, username, password });
   };
 
   return (
     <div className="h-screen w-full hero-bg">
-      <header className="max-w-6xl mx-auto flex items-center justify-between py-4">
+      <header className="max-w-6xl mx-auto flex items-center justify-between p-4">
         <Link to={"/"}>
           <img src="/netflix-logo.png" alt="logo" className="w-52" />
         </Link>
@@ -42,7 +41,7 @@ const SignUpPage = () => {
               </label>
               <input
                 type="email"
-                className="w-full px-3 py-2 mt-1 border-gray-700 rounded-md bg-transparent text-white focus:outline-none focus:ring"
+                className="w-full px-3 py-2 mt-1 border border-gray-700 rounded-md bg-transparent text-white focus:outline-none focus:ring"
                 placeholder="you@example.com"
                 id="email"
                 value={email}
@@ -59,7 +58,7 @@ const SignUpPage = () => {
               </label>
               <input
                 type="text"
-                className="w-full px-3 py-2 mt-1 border-gray-700 rounded-md bg-transparent text-white focus:outline-none focus:ring"
+                className="w-full px-3 py-2 mt-1 border border-gray-700 rounded-md bg-transparent text-white focus:outline-none focus:ring"
                 placeholder="johndoe"
                 id="username"
                 value={username}
@@ -76,29 +75,32 @@ const SignUpPage = () => {
               </label>
               <input
                 type="password"
-                className="w-full px-3 py-2 mt-1 border-gray-700 rounded-md bg-transparent text-white focus:outline-none focus:ring"
-                placeholder="********"
+                className="w-full px-3 py-2 mt-1 border border-gray-700 rounded-md bg-transparent text-white focus:outline-none focus:ring"
+                placeholder="••••••••"
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
 
-            <button className="w-full py-2 bg-red-600 text-white font-semibold rounded-md hover:bg-red-700">
-              Sign Up
+            <button
+              className="w-full py-2 bg-red-600 text-white font-semibold rounded-md
+							hover:bg-red-700
+						"
+              disabled={isSigningUp}
+            >
+              {isSigningUp ? "Loading..." : "Sign Up"}
             </button>
-
-            <div className="text-center text-gray-400">
-              Already a member?{" "}
-              <Link to={"/login"} className="text-red-500 hover:underline">
-                Sign in
-              </Link>
-            </div>
           </form>
+          <div className="text-center text-gray-400">
+            Already a member?{" "}
+            <Link to={"/login"} className="text-red-500 hover:underline">
+              Sign in
+            </Link>
+          </div>
         </div>
       </div>
     </div>
   );
 };
-
 export default SignUpPage;

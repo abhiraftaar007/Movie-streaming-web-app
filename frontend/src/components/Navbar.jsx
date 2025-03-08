@@ -10,7 +10,7 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
 
-  const {setContentType} =useContentStore();
+  const { setContentType } = useContentStore();
 
   return (
     <header className="max-w-6xl mx-auto flex flex-wrap items-center justify-between p-4 h-20">
@@ -89,5 +89,4 @@ const Navbar = () => {
     </header>
   );
 };
-
 export default Navbar;
